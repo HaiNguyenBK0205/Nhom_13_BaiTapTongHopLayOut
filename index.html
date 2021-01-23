@@ -8,6 +8,16 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 
     <!-- Thư viện Khác -->
+
+    <!-- slick -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <!--  -->
+
+    <!-- venobox -->
+    <link rel="stylesheet" href="./css/venobox.min.css">
+    <!--  -->
+
     <!--  -->
 
     <!-- CSS -->
@@ -203,16 +213,102 @@
     </header>
     <!--  -->
 
+    <!--  -->
+    <div id="space"></div>
+    <!--  -->
+
     <!-- carousel -->
-    <section id="carousel" class="container-fluid bg-dark">
+    <section id="carousel">
+
+        <div class="slick-carousel">
+            <div class="slick-carousel-item">
+                <img src="./images/lua-deu-gap-lua-dao-16105107337344.jpg">
+                <div class="venobox-carousel-contain">
+                    <a href="https://youtu.be/NWEe2BGhOUA" class="venobox_carousel" data-vbtype="video" data-autoplay="true">
+                        <img src="./images/play-video.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="slick-carousel-item">
+                <img src="./images/sam-hoi-16106874942953.jpg">
+                <div class="venobox-carousel-contain">
+                    <a href="https://youtu.be/_ffRLhWSPGk" class="venobox_carousel" data-vbtype="video" data-autoplay="true">
+                        <img src="./images/play-video.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="slick-carousel-item">
+                <img src="./images/em-la-cua-em-16106818552756.jpg">
+                <div class="venobox-carousel-contain">
+                    <a href="https://youtu.be/9m5HbGDFBrI" class="venobox_carousel" data-vbtype="video" data-autoplay="true">
+                        <img src="./images/play-video.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="slick-carousel-item">
+                <img src="./images/chi-13-16088073540614.png">
+                <div class="venobox-carousel-contain">
+                    <a href="https://youtu.be/r_nyRVdYtr4" class="venobox_carousel" data-vbtype="video" data-autoplay="true">
+                        <img src="./images/play-video.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="slick-carousel-item">
+                <img src="./images/tho-san-quai-vat-16094165971645.jpg">
+                <div class="venobox-carousel-contain">
+                    <a href="https://youtu.be/puQyZsaTtqY" class="venobox_carousel" data-vbtype="video" data-autoplay="true">
+                        <img src="./images/play-video.png">
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!--  -->
 
     <!-- Javascript -->
     <script src="./Bootstrap_4/js/jquery.min.js"></script>
+    <script src="./Bootstrap_4/js/jquery-migrate.js"></script>
     <script src="./Popper/src/popper.js"></script>
     <script src="./Bootstrap_4/js/bootstrap.js"></script>
+
+    <!-- venobox -->
+    <script src="./js/venobox.min.js"></script>
+    <script type="text/javascript">
+        $('.venobox_carousel').venobox({
+            bgcolor: '#5dff5e',
+            titleattr: 'data-title',
+            numeratio: true,
+            infinigall: true,
+            spinner: 'cube-grid',
+            spincolor: '#5dff5e'
+        });
+    </script>
+    <!--  -->
+
+    <!-- slick -->
+    <script src="./js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slick-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+    <!--  -->
+
+
+
     <!--  -->
 
     <!-- hainguyen js -->
