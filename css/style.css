@@ -20,6 +20,7 @@ body {
     line-height: 1.8;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
     position: fixed;
+    z-index: 1000;
     width: 100%;
 }
 
@@ -41,7 +42,13 @@ body {
 }
 
 #header .navbar-brand {
-    width: 10%;
+    width: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+    #header .navbar-brand {
+        width: 5%;
+    }
 }
 
 #header .navbar-brand img {
@@ -173,7 +180,7 @@ body {
     position: fixed;
     top: 0;
     right: -40px;
-    z-index: 9;
+    z-index: 99;
     transition: 0.5s;
     background-color: #fff;
 }
@@ -256,7 +263,7 @@ body {
 
 #side-panel .dropdown .dropdown-menu {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     top: -280px;
     left: 40%;
     transform: translateX(-58%);
@@ -302,7 +309,7 @@ body {
     }
     #header .navbar-nav .dropdown .dropdown-menu {
         position: absolute;
-        z-index: 10;
+        z-index: 100;
     }
 }
 
@@ -325,5 +332,202 @@ body {
 
 /* end header */
 
+#space {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
 
 /* carousel */
+
+#carousel {
+    width: 100%;
+    overflow: hidden;
+    max-height: 650px;
+}
+
+#carousel .slick-carousel img {
+    width: 100%;
+    height: 100%;
+}
+
+#carousel .slick-carousel .slick-carousel-item {
+    position: relative;
+    border-right: 2px solid #333;
+    border-left: 2px solid #333;
+}
+
+#carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 70px;
+}
+
+#carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+#carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain img {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain img:hover {
+    width: 80px;
+    height: 80px;
+    opacity: 0.75;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.9);
+}
+
+.vbox-close {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("../images/close.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 20px;
+    right: 50px;
+    color: transparent!important;
+    transition: 0.5s;
+}
+
+.vbox-close:hover {
+    opacity: 0.75;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.9);
+    transform: scale(1.2);
+}
+
+.slick-dots {
+    bottom: 60px;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 50px!important;
+    color: #fff;
+    opacity: 1!important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fb4226!important;
+}
+
+.slick-next {
+    height: 50px;
+    width: 50px;
+    background-image: url("../images/next-session.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 20px;
+    transition: 0.5s;
+}
+
+.slick-next:before {
+    content: "";
+}
+
+.slick-prev:before {
+    content: "";
+}
+
+.slick-next:hover,
+.slick-next:focus {
+    background: url("../images/next-session.png") no-repeat center center!important;
+    background-size: cover!important;
+    height: 60px;
+    width: 60px;
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+    background: url("../images/back-session.png") no-repeat center center!important;
+    background-size: cover!important;
+    height: 60px;
+    width: 60px;
+}
+
+.slick-prev {
+    height: 50px;
+    width: 50px;
+    background-image: url("../images/back-session.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 20px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    .vbox-close {
+        top: 150px;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .slick-dots {
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain img {
+        width: 40px;
+        height: 40px;
+    }
+    #carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain img:hover {
+        width: 50px;
+        height: 50px;
+    }
+    #carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain a {
+        width: 50px;
+        height: 50px;
+    }
+    .slick-dots li button:before {
+        font-size: 30px!important;
+    }
+    .slick-next {
+        height: 30px;
+        width: 30px;
+    }
+    .slick-prev {
+        height: 30px;
+        width: 30px;
+    }
+    .slick-next:hover,
+    .slick-next:focus {
+        height: 40px;
+        width: 40px;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus {
+        height: 40px;
+        width: 40px;
+    }
+    #carousel .slick-carousel .slick-carousel-item .venobox-carousel-contain {
+        top: 60%;
+        transform: translateY(-60%);
+    }
+}
+
+:focus {
+    outline: none;
+}
+
+
+/* end carousel */
