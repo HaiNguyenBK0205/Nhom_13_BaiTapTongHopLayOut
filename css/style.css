@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+.clear-both {
+    clear: both;
+}
+
 
 /* header */
 
@@ -335,7 +339,7 @@ body {
 #space {
     width: 100%;
     height: 60px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -343,7 +347,7 @@ body {
 
 #carousel {
     width: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
     max-height: 650px;
 }
 
@@ -531,3 +535,115 @@ body {
 
 
 /* end carousel */
+
+
+/* homeTool */
+
+#homeTool ::-webkit-scrollbar {
+    width: 4px;
+}
+
+#homeTool ::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 2px;
+}
+
+#homeTool ::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+}
+
+#homeTool ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+#homeTool {
+    position: relative;
+}
+
+#homeTool .card {
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+#homeTool .card .dropdown button {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#homeTool .card .dropdown button.btn-primary {
+    background-color: transparent!important;
+    color: #000;
+    border-top: none!important;
+    border-bottom: none;
+    border-left: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #ddd;
+}
+
+#homeTool .card .dropdown .dropdown-menu {
+    top: 50px;
+    left: -30px;
+    max-height: 300px;
+}
+
+#homeTool .card .dropdown .dropdown-menu .dropdown-item {
+    transition: 0.4s;
+}
+
+#homeTool .card .dropdown .dropdown-menu .dropdown-item:hover {
+    transform: scaleY(1.35);
+}
+
+#homeTool .card .dropdown button::after {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    color: #aaa;
+}
+
+#homeTool .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    #homeTool.container-lg {
+        margin-left: 2vw;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    #homeTool.container-lg {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #homeTool.container-lg {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #homeTool {
+        display: none;
+    }
+}
+
+.show-side-panel {
+    width: 80%;
+}
+
+
+/* end homeTool */
