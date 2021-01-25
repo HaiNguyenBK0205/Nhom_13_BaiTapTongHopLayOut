@@ -273,14 +273,14 @@
 
     <!-- homeTool thanh đặt vé -->
 
-    <section id="homeTool" class="container-lg justify-content-center">
+    <section id="homeTool" class="mainMaxWidth container-lg justify-content-center">
         <div class="card">
             <div class="card-body d-flex justify-content-around row">
                 <div class="dropdown col-3">
                     <button onclick="homeTool_Opendropdown(0)" type="button" class="btn btn-primary dropdown-toggle homeTool-button" data-toggle="dropdown">
                         Phim
                     </button>
-                    <div class="dropdown-menu homeTool-menu-item">
+                    <div class="dropdown-menu homeTool-menu-item" id="danh-sach-phim">
                         <a class="dropdown-item" href="#">Chị Mười Ba: 3 Ngày Sinh Tử (C18)</a>
                         <a class="dropdown-item" href="#">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)</a>
                         <a class="dropdown-item" href="#">Thợ Săn Quái Vật - Monster Hunter (C13)</a>
@@ -390,6 +390,91 @@
 
     <!--  -->
 
+    <!-- app -->
+
+    <section id="app">
+        <div class="mainMaxWidth">
+            <div class="row">
+                <div class="col-lg-7 right-app-content">
+                    <h2>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h2>
+                    <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+                    <button class="btn btn-danger mb-3 text-">App miễn phí - Tải về ngay!</button>
+                    <p>TIX có hai phiên bản <a href="#">iOS</a> & <a href="#">Android</a></p>
+                </div>
+
+                <div class="col-lg-5 left-app-content">
+                    <div class="constain">
+                        <div class="app-item">
+                            <img src="./images/slide1.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide2.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide3.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide4.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide5.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide6.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide7.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide8.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide9.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide10.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide11.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide12.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide13.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide14.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide15.jpg">
+                        </div>
+
+                        <div class="app-item">
+                            <img src="./images/slide16.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end-app -->
+
     <!-- Javascript -->
     <script src="./Bootstrap_4/js/jquery.min.js"></script>
     <script src="./Bootstrap_4/js/jquery-migrate.js"></script>
@@ -420,6 +505,21 @@
                 speed: 300,
                 autoplay: true,
                 autoplaySpeed: 5000,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.constain').slick({
+                dots: false,
+                arrows: false,
+                infinite: true,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 4000,
                 slidesToShow: 1,
                 adaptiveHeight: true
             });
