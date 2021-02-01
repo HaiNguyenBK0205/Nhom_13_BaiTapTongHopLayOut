@@ -837,3 +837,269 @@
     }
     /*  */
     /* end app */
+    /* homeMovies */
+    
+    #homeMovies {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    #homeMovies .header {
+        margin-bottom: 30px;
+    }
+    
+    #homeMovies .header .nav-tabs {
+        border: none;
+    }
+    
+    #homeMovies .header .nav-tabs .nav-link {
+        border: none;
+    }
+    
+    #homeMovies .nav-tabs .nav-link,
+    #homeMovies .nav-tabs .nav-item .nav-link {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #333;
+        transition: 0.4s;
+    }
+    
+    #homeMovies .nav-tabs .nav-link:hover,
+    #homeMovies .nav-tabs .nav-item .nav-link:hover {
+        transform: scale(1.2);
+        margin: 0 20px;
+    }
+    
+    #homeMovies .nav-tabs .nav-link.active,
+    #homeMovies .nav-tabs .nav-item.show .nav-link {
+        color: #fa5238;
+        transform: scale(1.2);
+    }
+    
+    #homeMovies .nav-tabs .nav-link.active:hover,
+    #homeMovies .nav-tabs .nav-item.show .nav-link:hover {
+        margin: 0;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        #homeMovies .nav-tabs .nav-link,
+        #homeMovies .nav-tabs .nav-item .nav-link {
+            font-size: 14px;
+        }
+    }
+    /*  */
+    
+    #homeMovies img {
+        border-radius: 5px;
+    }
+    
+    #homeMovies .mainMaxWidth {
+        max-width: 1000px;
+    }
+    
+    #homeMovies .slick-list {
+        margin-left: 2.5vw;
+    }
+    
+    #homeMovies .slick-slide {
+        margin: 0 15px;
+    }
+    
+    #homeMovies .slick-slide img {
+        width: 100%;
+        display: inline;
+    }
+    
+    #homeMovies .slick-slide .content {
+        position: relative;
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    
+    #homeMovies .slick-slide .content .dc_slick_btn {
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        top: 30%;
+        left: 40%;
+        display: none;
+        z-index: 1000;
+        transition: 0.4s;
+    }
+    
+    #homeMovies .slick-slide .content .dc_slick_btn:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    
+    #homeMovies .slick-slide .content:hover .dc_slick_btn {
+        display: block;
+    }
+    
+    #homeMovies .slick-slide .content>img {
+        height: 75%;
+        margin-bottom: 10px;
+    }
+    
+    #homeMovies .slick-slide .content::after {
+        position: absolute;
+        content: "";
+        display: none;
+        width: 100%;
+        height: 75%;
+        background: linear-gradient(to top, #000, transparent 100%);
+        top: 15px;
+        left: 0;
+        border-radius: 5px;
+    }
+    
+    #homeMovies .slick-slide .content:hover::after {
+        display: block;
+    }
+    
+    #homeMovies .slick-slide .content .fade {
+        width: 100%;
+        height: 15px;
+    }
+    
+    #homeMovies .slick-slide .content .danh_gia {
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    
+    #homeMovies .slick-slide .content .day_chieu {
+        position: absolute;
+        bottom: 95px;
+        right: 10px;
+    }
+    
+    #homeMovies .slick-slide .content .day_chieu .btn {
+        background-color: rgba(12, 27, 54, 0.8);
+        border: 1px solid #337ab7;
+        color: white;
+        padding: 5px;
+    }
+    
+    #homeMovies .slick-slide .content .danh_gia h3 {
+        font-size: 16px;
+        padding: 0;
+        margin: -2.5px;
+        line-height: 10px;
+        color: white;
+    }
+    
+    #homeMovies .slick-slide .content .danh_gia img {
+        width: 8px;
+        height: 8px;
+        margin: -2.5px;
+        padding: -2.5px;
+    }
+    
+    #homeMovies .slick-slide .content .danh_gia .btn {
+        background-color: rgba(12, 27, 54, 0.8);
+        border: 1px solid #337ab7;
+        min-width: 60px;
+    }
+    
+    #homeMovies .slick-slide .content .bom_tan {
+        position: absolute;
+        top: -20px;
+        left: -27.5px;
+        width: 80%;
+    }
+    
+    #homeMovies .slick-slide .content .show-content h3 {
+        font-size: 16px;
+        min-height: 40px;
+    }
+    
+    #homeMovies .slick-slide .content .show-content p {
+        font-size: 13px;
+    }
+    
+    #homeMovies .slick-slide .content .show-content h3 .badge {
+        background-color: #fa5238;
+        color: white;
+        min-width: 30px;
+        padding: 5px;
+    }
+    
+    #homeMovies .slick-slide .content .hidden-content {
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        display: none;
+    }
+    
+    #homeMovies .slick-slide .content:hover {
+        cursor: pointer;
+    }
+    
+    #homeMovies .slick-slide .content:hover .show-content {
+        display: none;
+    }
+    
+    #homeMovies .slick-slide .content:hover .hidden-content {
+        display: block;
+    }
+    
+    .P-green {
+        background-color: #00ac4d!important;
+        color: white!important;
+    }
+    
+    #homeMovies .slick-slide .content .hidden-content .btn {
+        background: linear-gradient(to right, #f00010, #fa5238);
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #homeMovies .slick-slide .content .hidden-content .btn:hover {
+        animation-name: mua_ve;
+        animation-duration: 1s;
+    }
+    
+    #homeMovies .slick-next {
+        right: -70px;
+    }
+    
+    #homeMovies .slick-prev {
+        left: -30px;
+    }
+    
+    @media only screen and (max-width: 1080px) {
+        #homeMovies .slick-next {
+            right: -50px;
+            height: 40px;
+            width: 40px;
+        }
+        #homeMovies .slick-prev {
+            left: -20px;
+            height: 40px;
+            width: 40px;
+        }
+    }
+    
+    @media screen and (max-width: 1030px) {
+        #homeMovies .slick-prev {
+            display: none!important;
+        }
+        #homeMovies .slick-next {
+            display: none!important;
+        }
+    }
+    
+    @keyframes mua_ve {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /* end homeMovies */
