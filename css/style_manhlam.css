@@ -309,11 +309,15 @@
 
 .tix-zion {
     text-align: left;
+    font-size: 14px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
     .tix-zion {
         text-align: center;
+    }
+    .tix-contact p {
+        text-align: center!important;
     }
 }
 
