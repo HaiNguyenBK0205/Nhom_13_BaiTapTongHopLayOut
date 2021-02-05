@@ -1445,3 +1445,16 @@
     #content-rcp #tab-main .contain-content {
         border-bottom: 1px solid #ccc;
     }
+    
+    #content-rcp .nav-item .nav-link {
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    
+    #content-rcp .nav-item .nav-link:hover {
+        opacity: 1;
+    }
+    
+    #content-rcp .nav-item .nav-link.active {
+        opacity: 1;
+    }
